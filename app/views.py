@@ -6,4 +6,4 @@ from app import app
 def index():
     new_user = {'nickname': 'Billy'}  # Mock data
 
-    return render_template('index.html', title='Home', user=new_user)
+    return render_template('index.html', user=new_user)
