@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% if (title) %}
+    {% if title %}
       <title>{{ title }} - Microblog</title>
     {% else %}
       <title>Welcome to Microblog</title>
@@ -15,6 +15,12 @@
   <body>
 
     <h1>Hello, {{ user.nickname }}</h1>
+
+    {% for post in posts %}
+      <div>
+        <p>{{ post.author.nickname }} says: <strong>{{ post.body }}</strong></p>
+      </div>
+    {% endfor %}
 
   </body>
 </html>
