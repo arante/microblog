@@ -8,4 +8,4 @@ def index():
         'nickname': 'Billy Wilson'
     }
 
-    return render_template('index.html', title='Home', user=user)
+    return render_template('index.html', user=user)
