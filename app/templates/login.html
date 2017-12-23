@@ -10,6 +10,9 @@
     <p>
       Please, enter your OpenID:<br>
       {{ form.openid(size=80) }}<br>
+      {% for error in form.openid.errors %}
+        <span style="color:red;">[{{ error }}]</span>
+      {% endfor %}
     </p>
 
     <p>{{ form.remember_me }} Remember me</p>
