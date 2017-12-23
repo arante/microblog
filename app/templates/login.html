@@ -1,10 +1,10 @@
 <!-- extend from base layout -->
-{% extend 'base.html' %}
+{% extends 'base.html' %}
 
 {% block content %}
   <h1>Sign In</h1>
 
-  <form name="login" method="post" action="">
+  <form name="login" method="POST" action="">
     {{ form.hidden_tag() }}
 
     <p>
