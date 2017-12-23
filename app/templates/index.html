@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+{% extends 'base.html' %}
 
-    {% if title %}
-      <title>{{ title }} - arantebillywilson</title>
-    {% else %}
-      <title>Welcome to arantebillywilson!</title>
-    {% endif %}
+{% block content %}
+  <h1>Hi, {{ user.nickname }}!</h1>
 
-  </head>
-  <body>
-
-    <h1>Hello, {{ user.nickname }}!</h1>
-
-  </body>
-</html>
+  {% for post in posts %}
+    <div>
+      <p>{{ post.author.nickname }} says: <strong>{{ post.body }}</strong></p>
+    </div>
+  {% endfor %}
+{% endblock %}
