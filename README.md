@@ -1,6 +1,6 @@
 # Microblog
 
-The Flask mega tutorial by [Miguel Grinberg](https://twitter.com/miguelgrinberg).
+The [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) by [Miguel Grinberg](https://twitter.com/miguelgrinberg).
 
 ---
-Created by [Billy Wilson Arante](https://arante.github.io) of Mandaluyong City, Philippines
+Created by [Billy Wilson Arante](https://arante.github.io/portfolio) of Mandaluyong City, Philippines
